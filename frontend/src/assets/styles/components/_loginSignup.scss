@@ -1,0 +1,53 @@
+.user-page,.display-note {
+  background-color: white;
+  position: fixed;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 0.2rem;
+  .close-button{
+    background-color: rgb(225, 225, 225);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid rgb(186, 186, 186);
+    padding: 0.3rem 0.5rem;
+    border-bottom-right-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.15s;
+    &:hover{
+      background-color: rgb(212, 212, 212);
+    }
+  }
+  form {
+    border: 1px solid rgb(209, 209, 209);
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 5rem;
+    h2 {
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      div {
+        width: 17rem;
+        display: flex;
+        justify-content: space-between;
+
+        input,textArea {
+          width: 12rem;
+          resize: none;
+        }
+      }
+    }
+  }
+}

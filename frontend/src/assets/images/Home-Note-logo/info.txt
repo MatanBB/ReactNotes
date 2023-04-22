@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Barlow-Bold
+font link: https://fonts.google.com/specimen/Barlow
+font author: Jeremy Tribby
+font author site: https://tribby.com/
+
+
+icon designer: AVA ROWELL
+icon designer link: /avarowell
+        
+{"bg":"#EFF5EB","font":"#1C300E","icon-gradient-0":"#21690F","icon-gradient-1":"#88C848","slogan":"#304422"}
+      

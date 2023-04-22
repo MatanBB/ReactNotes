@@ -1,0 +1,157 @@
+dialog {
+  z-index: 100;
+  padding: 0;
+  border-radius: 0.2rem;
+  border: 1px black solid;
+  position: fixed;
+  top: 13rem;
+
+  .close-btn {
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(153, 22, 22);
+    cursor: pointer;
+  }
+
+  .group-participants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    gap: 0.5rem;
+    .participant {
+      display: flex;
+      gap: 0.1rem;
+      align-items: center;
+      text-align: center;
+      span {
+        color: red;
+        font-size: 1rem;
+        font-family: raleway-bold;
+        transition: 0.1s all;
+        cursor: pointer;
+        &:hover{
+          scale:1.05;
+        }
+      }
+    }
+
+    p {
+      cursor: default;
+      padding: 0.1rem 0.5rem !important;
+      border: 2px rgb(0, 0, 0, 0.1) solid;
+      font-size: 0.85rem;
+      text-overflow: ellipsis;
+      width: 80px;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: rgba(173, 210, 223, 0.6);
+      border-radius: 0.3rem;
+      transition: 0.1s all;
+      &:hover{
+        scale:1.04;
+      }
+    }
+  }
+
+  .dropdown-container {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .group-participants {
+    gap: 0;
+    max-height: fit-content;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    .user-searchlist {
+      width: 11rem;
+    }
+
+    .user-searchlist {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 0.3rem;
+        margin: 0;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        border-bottom: 1px rgb(2, 2, 2, 0.1) solid;
+        transition: all 0.15s;
+        background-color: rgb(217, 229, 243);
+        cursor: pointer;
+
+        &:hover {
+          transform: translateZ(0);
+          background-color: rgb(196, 214, 234);
+          scale: 1.03;
+        }
+      }
+
+      :last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  form {
+    margin-inline: 3rem;
+    margin-block: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 17rem;
+
+    h2 {
+      font-family: raleway-bold;
+      margin: 0;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      margin-top: 1rem;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0.3rem 0.6rem;
+      font-family: raleway-bold;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      color: green;
+      border: 1px green solid;
+      transition: 0.15s all;
+
+      &:hover {
+        background-color: rgb(207, 229, 207);
+      }
+    }
+  }
+}

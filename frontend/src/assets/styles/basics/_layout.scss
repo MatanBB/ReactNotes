@@ -1,0 +1,19 @@
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:
+        minmax(1px, 1fr) minmax(auto, 69vw) minmax(1px, 1fr);
+
+    >* {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1/-1;
+        }
+    }
+}
+
+
+.main-text {
+    margin-bottom: rem(90px);
+}

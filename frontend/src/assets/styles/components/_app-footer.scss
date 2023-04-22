@@ -1,0 +1,28 @@
+.app-footer {
+  background-color: white;
+  height: fit-content;
+  padding-block-start: 1.2rem;
+  padding-block-end: 0.4rem;
+  position: sticky;
+  top: 100%;
+  box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10rem;
+  div{
+    font-size: 0.95rem;
+    color: rgb(110, 110, 110);
+  }
+  nav{
+    display: flex;
+    gap: 2rem;
+    font-family: raleway-bold;
+    font-size: 0.85rem;
+    color: rgb(63, 63, 63);
+    p{
+      letter-spacing: 0.55px;
+    }
+  }
+}

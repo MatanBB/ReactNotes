@@ -1,0 +1,99 @@
+.app-header {
+  z-index: 100;
+  background-color: white;
+  font-family: "roboto-bold";
+  -webkit-box-shadow: 0px 1px 18px -5px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 1px 18px -5px rgba(0, 0, 0, 0.42);
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  height: 6rem;
+
+  .left-section {
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: raleway-medium;
+
+    ul li>a {
+      color: rgb(57, 57, 57);
+      border-inline-end: 1px solid rgba(163, 163, 163, 0.4);
+      padding-inline-end: 2rem;
+      transition: 0.1s all;
+
+      &:hover {
+        color: black;
+        border-inline-end: 1px solid rgba(163, 163, 163, 0.55);
+      }
+    }
+  }
+
+
+  .header-logo {
+    height: 6rem;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul,
+  .right-section {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .right-section {
+    font-size: 0.8rem;
+
+    button {
+      background-color: rgb(192, 246, 184);
+      border: 3px solid rgba(160, 233, 149, 0.4);
+      border-radius: 0.2rem;
+      padding: 0.2rem 0.8rem;
+      transition: all 0.15s;
+      font-family: "raleway-bold";
+      font-size: 0.8rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(178, 237, 168);
+        border: 3px solid rgba(154, 230, 143, 0.4);
+      }
+    }
+  }
+}
+
+@media (max-width:1300px) {
+
+  .app-header {
+    .nav-links {
+      gap: 0rem;
+      margin-inline: 0;
+
+      a {
+        padding-inline-end: 0.7rem !important;
+      }
+
+      li {
+        padding-inline-end: 1rem;
+      }
+    }
+
+    .left-section {
+      gap: 0.4rem;
+    }
+
+    .right-section {
+      flex-direction: column-reverse;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+  }
+}

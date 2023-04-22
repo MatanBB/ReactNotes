@@ -1,0 +1,82 @@
+.home-page {
+  header {
+    :first-child {
+      text-align: center;
+      line-height: 4rem;
+      font-size: 2.5rem;
+      font-family: roboto-bold;
+      font-weight: bold;
+      color: rgb(45, 45, 45);
+    }
+
+    :nth-child(2) {
+      text-align: center;
+      color: rgb(44, 44, 44);
+      font-size: 1.4rem;
+      font-family: roboto-medium;
+    }
+
+  }
+
+  .monitor-view {
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    padding-inline: 1rem;
+    max-height: fit-content;
+    .home-view {
+      width: 75%;
+      object-fit: contain;
+      aspect-ratio: 4/2;
+    }
+
+    div {
+      padding-block: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25%;
+      max-height: auto;
+      p {
+        font-size: 1.6rem;
+        font-family: raleway-bold;
+        text-align: start;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .reviews{
+    padding-inline: 2rem;
+    text-align: center;
+    font-family: raleway-bold;
+    letter-spacing: 1px;
+    margin-top: 5rem;
+    section{
+      display: flex;
+      gap:1rem;
+      div{
+        width: 32%;
+        border: 2px rgb(102, 193, 118,0.5) solid;
+        margin-bottom: 4rem;
+        border-radius: 3rem;
+        padding-block-start: 1rem;
+        padding-inline: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-height: 12rem;
+        h3{
+          padding-inline: 2rem;
+          font-size: 1rem;
+          font-family: raleway-italic;
+          color: rgb(140, 140, 140);
+          text-align: start;
+        }
+        p{
+          font-family: raleway-semi-light;
+          overflow:hidden ;
+        }
+      }
+    }
+  }
+}
